@@ -5,9 +5,26 @@ import java.util.Collections;
 
 public class Examen1 {
     
-    static ArrayList<String> extraerDiasDeSemana(ArrayList<String> palabras)
-    {
-        return null;
+    static ArrayList<String> extraerDiasDeSemana(ArrayList<String> palabras){
+    
+        ArrayList<String> Semana= new ArrayList<>();
+        if (palabras.contains("lunes"))
+            Semana.add("lunes");
+        if (palabras.contains("martes"))
+            Semana.add("martes");
+        if (palabras.contains("miercoles"))
+            Semana.add("miercoles");
+        if (palabras.contains("jueves"))
+            Semana.add("jueves");
+        if (palabras.contains("viernes"))
+            Semana.add("viernes");
+        if (palabras.contains("sabado"))
+            Semana.add("sabado");
+        if (palabras.contains("domingo"))
+            Semana.add("domingo");
+        
+        
+        return Semana;
     }
     
     static boolean sonMayoresDeEdad(ArrayList<Integer> edades){
